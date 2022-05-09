@@ -9,3 +9,9 @@ h1 {
 body {
     background-color: #ccccd6;
 }
+.tag {
+    width: 100px;
+    height: 200px;
+    background-color: rgb(227, 83, 83);
+    border-radius: 5px;
+}
