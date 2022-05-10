@@ -1,7 +1,7 @@
 
 !(function () {
   /** 计时起始时间，自行修改 **/
-  var start = new Date("2022/5/20 00:00:00");
+  var start = new Date("2022/5/5 00:00:00");
 
   function update() {
     var weekStr = "日一二三四五六" ;
