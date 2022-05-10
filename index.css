@@ -2,16 +2,26 @@
     padding: 0;
     margin: 0;
 }
+
 h1 {
-    color: red;
-    
+    color: rgb(152, 84, 84);
+
 }
+
 body {
     background-color: #ccccd6;
 }
+
 .tag {
     width: 100px;
-    height: 200px;
-    background-color: rgb(227, 83, 83);
+    height: 50px;
+    background-color: rgb(174, 166, 166);
     border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.tag a {
+    text-decoration: none;
+    color: rgb(202, 230, 246);
 }

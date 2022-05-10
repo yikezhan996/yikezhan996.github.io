@@ -27,6 +27,6 @@
       document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
     }
   
-    update();
-    setInterval(update, 1000);
+    update();                   //执行更新方法
+    setInterval(update, 1000); //每秒更新一次
   })();
