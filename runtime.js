@@ -10,9 +10,6 @@
     var month = now.getMonth() + 1; // 月 0--11
     var today = now.getDate(); // 日
     var week = now.getDay(); // 星期 0--6
-    var h = now.getHours(); // 时
-    var m = now.getMinutes(); // 分
-    var s = now.getSeconds(); // 秒
     now.setTime(now.getTime() + 250);
     days = (now - start) / 1000 / 60 / 60 / 24;
     dnum = Math.floor(days);
@@ -31,7 +28,7 @@
     if (String(snum).length === 1) {
       snum = "0" + snum;
     }
-    document.getElementById("nowTime").innerHTML = "现在是&nbsp" + year + "年" + month + "月" + today + "日 星期" + weekStr[week] + "&nbsp" + h + "时" + m + "分" + s + "秒";
+    document.getElementById("nowTime").innerHTML = "现在是&nbsp" + year + "年" + month + "月" + today + "日 星期" + weekStr[week];
     document.getElementById("timeDate").innerHTML = "本站艰难的存活了&nbsp" + dnum + "&nbsp天";
     document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
   }
