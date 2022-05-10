@@ -25,6 +25,19 @@ body {
     text-decoration: none;
     color: rgb(202, 230, 246);
 }
+.about {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(174, 166, 166);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.about a {
+    text-decoration: none;
+    color: rgb(202, 230, 246);
+}
 #nowTime {
     color: rgb(237, 44, 26);
 }
