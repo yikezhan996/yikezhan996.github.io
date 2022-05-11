@@ -1,6 +1,10 @@
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 宋体;
+    font-weight: normal;
 }
 
 h1 {
@@ -12,31 +16,25 @@ body {
     background-color: #ccccd6;
 }
 
-.tag {
-    width: 100px;
+.start_nav {
+    background-color: rgb(241, 239, 239);
     height: 50px;
-    background-color: rgb(174, 166, 166);
-    border-radius: 5px;
+}
+.start_nav li {
+    float: right;
+    height: 50px;
     text-align: center;
     line-height: 50px;
+    padding: 0 50px;
+    background-color: rgb(201, 197, 197);
 }
-
-.tag a {
-    text-decoration: none;
-    color: rgb(202, 230, 246);
+.start_nav li:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.about {
-    width: 100px;
-    height: 50px;
-    background-color: rgb(174, 166, 166);
-    border-radius: 5px;
-    text-align: center;
-    line-height: 50px;
-}
-
-.about a {
-    text-decoration: none;
-    color: rgb(202, 230, 246);
+.start_nav li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 #nowTime {
     color: rgb(237, 44, 26);
