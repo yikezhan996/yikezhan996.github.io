@@ -1,0 +1,98 @@
+/* 公共样式 */
+
+/* 声明字体图标 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.woff2?t=1652281885766') format('woff2'),
+        url('../fonts/iconfont.woff?t=1652281885766') format('woff'),
+        url('../fonts/iconfont.ttf?t=1652281885766') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 18px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* 版心 */
+.w {
+
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* 单个盒子左浮动 */
+.fl {
+    float: left;
+}
+
+/* 单个盒子右浮动 */
+.fr {
+    float: right;
+}
+
+/* 公共样式：红色 */
+.style_red {
+    color: rgb(116, 54, 54);
+}
+
+.logname {
+    font-size: 19px;
+    color: rgb(116, 54, 54);
+    font-family: "\5B8B\4F53";
+}
+
+/* 快捷导航模块 */
+.shortcut {
+    position: fixed;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    height: 40px;
+    /* 垂直居中会继承 */
+    line-height: 40px;
+    background-color: #f1f1f1;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+.shortcut .fr ul li {
+    height: 40px;
+    padding: 0 10px;
+}
+
+.shortcut .fr ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.shortcut .fr ul li:hover {
+    background-color: rgba(11, 11, 11, 0.1);
+    border-radius: 3px;
+    border-bottom: 2px solid rgb(102, 57, 57);
+}
+
+
+/* 伪元素箭头 */
+.arrow-icon::after {
+    content: ' \e6b8';
+    font-family: 'iconfont';
+    /* 伪元素，行内元素 */
+    margin-left: 3px;
+}
+
+/* 底部模块制作start */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+}

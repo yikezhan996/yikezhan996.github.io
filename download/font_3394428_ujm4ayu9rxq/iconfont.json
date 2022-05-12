@@ -1,0 +1,51 @@
+{
+  "id": "3394428",
+  "name": "忆客栈",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "29570645",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "29570655",
+      "name": "左箭头",
+      "font_class": "zuojiantou",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "29570631",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e6b3",
+      "unicode_decimal": 59059
+    },
+    {
+      "icon_id": "29570633",
+      "name": "向下箭头",
+      "font_class": "xiangxiajiantou",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "29570636",
+      "name": "下箭头",
+      "font_class": "xiajiantou",
+      "unicode": "e6b5",
+      "unicode_decimal": 59061
+    },
+    {
+      "icon_id": "29570659",
+      "name": "向上箭头",
+      "font_class": "xiangshangjiantou",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    }
+  ]
+}
