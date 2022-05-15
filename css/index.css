@@ -1,0 +1,148 @@
+/* 首页样式文件 */
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.main .focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: blue;
+}
+.main .focus img {
+    width: 721px;
+    height: 455px;
+}
+.main .newsflash {
+    float: right;
+    height: 455px;
+    width: 253px;
+}
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.news_hd {
+    height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    line-height: 33px;
+    padding: 0 15px;
+}
+.news_hd h5 {
+    float: left;
+    font-size: 14px;
+}
+.news_hd .more {
+    float: right;
+}
+.news_hd .more::after {
+    content: '\e6b7';
+    font-family: 'iconfont';
+}
+.news_bd {
+    padding: 5px 15px 0;
+}
+.news_bd ul li {
+    height: 24px;
+    line-height: 24px;
+}
+.news_bd ul li a{
+    font-size: 8px;
+}
+.lifeservice {
+    height: 209px;
+    border-left: 1px solid #e4e4e4;
+}
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4 ;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    padding-top: 12px;
+}
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+}
+#img1 {
+    background: url(../images/icons.png) no-repeat -18px -15px;
+}
+
+#img2 {
+    background: url(../images/icons.png) no-repeat -79px -15px;
+}
+#img3 {
+    background: url(../images/icons.png) no-repeat -141px -15px;
+}
+#img4 {
+    background: url(../images/icons.png) no-repeat -206px -15px;
+}
+#img5 {
+    background: url(../images/icons.png) no-repeat -16px -88px;
+}
+#img6 {
+    background: url(../images/icons.png) no-repeat -79px -88px;
+}
+#img7 {
+    background: url(../images/icons.png) no-repeat -141px -88px;
+}
+#img8 {
+    background: url(../images/icons.png) no-repeat -206px -88px;
+}
+#img9 {
+    background: url(../images/icons.png) no-repeat -18px -158px;
+}
+#img10 {
+    background: url(../images/icons.png) no-repeat -79px -158px;
+}
+#img11 {
+    background: url(../images/icons.png) no-repeat -141px -154px;
+}
+#img12 {
+    background: url(../images/icons.png) no-repeat -206px -158px;
+}
+.bargain {
+    margin-top: 5px;
+}
+.bargain img {
+    width: 252px;
+}
+
+/* 推荐模块 */
+.seckill {
+    height: 260px;
+    background-color: blue;
+    margin-top: 15px;
+}
+.seckill_countdown {
+    float: left;
+    height: 260px;
+    width: 200px;
+    background: url(https://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/img/4a15d8883775742e3efbb850ae14def7.png);
+}
+.seckill_list {
+    float: left;
+    height: 260px;
+    background-color: red;
+}
+.seckill_list ul li {
+    float: left;
+    width: 200px;
+    height: 260px;
+}
+.seckill_brand {
+    height: 260px;
+    background-color: purple;
+}
+.pyg_spec {
+    margin-top: 15px;
+}
+.pyg_spec .w {
+    background-color: blue;
+    height: 340px;
+}
