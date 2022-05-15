@@ -49,6 +49,9 @@
     line-height: 31px;
     background-color: #f1f1f1;
 }
+.shortcut .w {
+    background-color: #f1f1f1;
+}
 .shortcut ul li {
     float: left;
 }
@@ -164,6 +167,9 @@
     height: 47px;
     border-bottom: 2px solid #b2191b;
 }
+.nav .w {
+    border-bottom: 2px solid #b2191b;
+}
 .nav .dropdown {
     float: left;
     width: 210px;
@@ -231,6 +237,9 @@
     height: 415px;
     background-color: #f5f5f5;
     padding-top: 30px;
+}
+.footer .w {
+    background-color: #f5f5f5;
 }
 .mod_service {
     height: 80px;
