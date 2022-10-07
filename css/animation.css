@@ -1,0 +1,65 @@
+.banxin_box {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 影视模块*/
+.box {
+    margin-top: 50px;
+    padding: 50px 0 0 0;
+}
+/* 影视模块 */
+.video h1 a{
+    color: rgb(167, 39, 206);
+}
+
+/* 搜索模块 */
+.search {
+    margin: 20px 0 0 0;
+}
+/* 搜索框 */
+#search-box {
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    background-color: rgb(196, 225, 232);
+    box-shadow: 1px 3px 5px rgb(117, 217, 222);
+    margin-right: 20px;
+}
+#btn-search {
+    height: 25px;
+    width: 60px;
+    border: none;
+    background-color: rgb(186, 245, 217);
+    border-radius: 12.5px;
+}
+/* 播放链接框 */
+#play-box {
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    background-color: rgb(196, 225, 232);
+    box-shadow: 1px 3px 5px rgb(117, 217, 222);
+    margin: 0 20px 0 20px;
+}
+/* 播放按钮 */
+#submit {
+    height: 25px;
+    width: 60px;
+    border: none;
+    background-color: rgb(186, 245, 217);
+    border-radius: 12.5px;
+}
+
+input[type=text]:focus {
+
+    outline: none;
+    
+    border-color: #2ca63b;
+    
+    background-color: #fff;
+    
+    }

@@ -1,11 +1,14 @@
 /* 通用样式表 */
 
+body {
+    background-image: linear-gradient(to right, rgba(208, 233, 230, 0.3), rgba(139, 134, 137, 0.5),rgba(109, 110, 93, 0.6));;
+}
 /* nav 导航栏部分 */
 .nav {
     position: relative;
     width: 1200px;
     height: 40px;
-
+    background-color: rgba(190, 225, 241, 0.1);
 }
 
 .nav a img{
@@ -29,3 +32,4 @@ position: absolute;
 .nav_center a:hover {
     color: brown;
 }
+
