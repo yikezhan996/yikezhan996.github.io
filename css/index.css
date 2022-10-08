@@ -74,6 +74,15 @@ img {
 .time-box {
     text-align: center;
 }
+.time-box #now-time {
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: rgb(143, 88, 233);
+}
+.time-box .run-time {
+    font-size: 5px;
+    color: rgb(248, 9, 9);
+}
 
 /* 文章列表模块 */
 .artical-list ul li {
