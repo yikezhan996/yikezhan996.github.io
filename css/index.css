@@ -39,7 +39,7 @@ body {
 .topnav a:hover {
     background-color: rgba(212, 193, 241, 0.3);
     color: rgb(41, 8, 8);
-    /* box-shadow: 2px 2px 5px rgb(72, 186, 227); */
+    box-shadow: 1px 1px 5px rgb(72, 186, 227);
 }
 
 /* 创建两列 */
@@ -64,6 +64,9 @@ body {
 .about-me h3 {
     margin: 10px 0;
 }
+.about-me p {
+    color: rgb(141, 11, 247);
+}
 img {
     width: 100px;
     height: 100px;
@@ -86,8 +89,20 @@ img {
 
 /* 文章列表模块 */
 .artical-list ul li {
+    height: 30px;
+    line-height: 30px;
     margin-bottom: 5px;
+    border-radius: 5px;
+    /* background-color: rgba(255,255,255,.3); */
 } 
+.artical-list ul li:hover {
+    background-color: rgba(255,255,255,.2);
+    box-shadow: 1px 1px 1px rgb(75, 73, 73);
+}
+.artical-list ul li:hover a{
+    color: rgb(148, 15, 236);
+}
+
 .artical-list h3 {
     width: 100%;
     margin: 0 80px 10px;

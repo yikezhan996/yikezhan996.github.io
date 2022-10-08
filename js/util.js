@@ -23,6 +23,6 @@ window.onload = function () {
 }
 // 2.定义一个补零函数
 function checkTime(n) {
-    return n > 0 ? n : "0" + n;
+    return n >= 10 ? n : "0" + n;
 }
 
