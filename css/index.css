@@ -4,23 +4,25 @@
     padding: 0;
     margin: 0;
 }
-
+a {
+    text-decoration: none;
+}
 /* 版心居中 */
 .container {
-    width: 1400px;
+    width: 1200px;
     margin: 0 auto;
 }
 
 body {
     font-family: Arial;
-    padding: 10px;
-    background: #f1f1f1;
+    background-image: linear-gradient(to right bottom,rgb(163, 206, 241),rgb(158, 158, 245));
 }
 
 /* 导航条 */
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color:rgba(231, 226, 226,.3);
+    border-radius: 10px 10px 0 0;
 }
 
 /* 导航条链接 */
@@ -51,22 +53,42 @@ body {
 .rightcolumn {
     float: left;
     width: 25%;
-    background-color: #f1f1f1;
     padding-left: 20px;
 }
 
-/* 图像部分 */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+/* 关于我模块 */
+.about-me {
+    height: 200px;
+    text-align: center;
+}
+.about-me h3 {
+    margin: 10px 0;
+}
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
 }
 
+/* 时间模块 */
+.time-box {
+    text-align: center;
+}
+
+/* 文章列表模块 */
+.artical-list ul li {
+    margin-bottom: 5px;
+} 
+.artical-list h3 {
+    width: 100%;
+    margin: 0 80px 10px;
+}
 /* 文章卡片效果 */
 .card {
-    background-color: white;
+    background-color: rgba(255, 255, 255,.3);
     padding: 20px;
-    margin-top: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
 }
 
 /* 列后面清除浮动 */
@@ -76,28 +98,13 @@ body {
     clear: both;
 }
 
-/* 底部 */
+/* 脚部模块 */
 .footer {
+    overflow: hidden;
+    height: 60px;/*脚部的高度*/
+    width: 1200px;
+    background-color: rgba(231, 226, 226,.3);
     padding: 10px;
     text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-}
-
-/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
-@media screen and (max-width: 800px) {
-
-    .leftcolumn,
-    .rightcolumn {
-        width: 100%;
-        padding: 0;
-    }
-}
-
-/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
-@media screen and (max-width: 400px) {
-    .topnav a {
-        float: none;
-        width: 100%;
-    }
+    border-radius: 0 0 10px 10px;
 }
