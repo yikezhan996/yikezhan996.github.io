@@ -1,55 +1,13 @@
-* {
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-}
-/* 版心居中 */
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 html {
     font-family: Arial;
     /* background-color: aqua; */
-    background-image: linear-gradient(to bottom,rgb(158, 158, 245),rgb(163, 206, 241),rgb(180, 232, 191));
-}
-
-/* 文章卡片效果 */
-.card {
-    background-color: rgba(255, 255, 255,.3);
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-}
-
-/* 导航条 */
-.topnav {
-    overflow: hidden;
-    background-color:rgba(231, 226, 226,.3);
-    border-radius: 10px 10px 0 0;
-}
-
-/* 导航条链接 */
-.topnav ul li a{
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 25px;
-    text-decoration: none;
-}
-
-/* 链接颜色修改 */
-.topnav a:hover {
-    background-color: rgba(212, 193, 241, 0.3);
-    color: rgb(41, 8, 8);
-    box-shadow: 1px 1px 5px rgb(72, 186, 227);
+    background-image: linear-gradient(to bottom,
+    rgb(158, 158, 245),
+    rgb(163, 206, 241),
+    rgb(180, 232, 191),
+    rgb(163, 206, 241),
+    rgb(158, 158, 245)
+    );
 }
 
 /* 创建三列 */
@@ -72,11 +30,15 @@ html {
 }
 
 /* 文章目录模块 */
+
 .blank-box {
     /* height: 2000px; */
     background-color: rgb(162, 201, 241,0.1);
 }
-
+.artical-type-nav {
+    position: sticky;
+    top: 0;
+}
 .artical-type-nav .card h3{
     margin-left: 10px;
 }
@@ -136,10 +98,6 @@ html {
 }
 
 /* 文章列表模块 */
-.artical-list {
-    position: sticky;
-    top: 0;
-}
 .artical-list ul li {
     height: 30px;
     line-height: 30px;
@@ -179,6 +137,9 @@ html {
     border-radius: 10px;
     line-height: 30px;
 }
+.back-to-top a {
+    color: rgb(53, 6, 6);
+}
 .back-to-top:hover {
     background-color: rgba(0,0,0,.1);
 }
@@ -200,7 +161,7 @@ html {
     overflow: hidden;
     height: 60px;/*脚部的高度*/
     width: 1200px;
-    background-color: rgba(231, 226, 226,.3);
+    background-color: rgba(231, 226, 226,.2);
     padding: 10px;
     text-align: center;
     border-radius: 0 0 10px 10px;
