@@ -1,13 +1,17 @@
 /* 格式化 */
-div,span,a,ul,li,h1,h3,p{
+div,span,a,ul,li,h1,h3,p,body,button{
     box-sizing: border-box;
     list-style: none;
     padding: 0;
     margin: 0;
 }
+body, button, input, select, textarea {
+    font:12px/1.5tahoma, arial, \5b8b\4f53; 
+}
 a {
     text-decoration: none;
 }
+
 /* 版心居中 */
 .container {
     width: 1200px;
@@ -28,14 +32,43 @@ a {
 }
 
 /* 导航条链接 */
-.topnav ul li a{
-    float: right;
+.topnav ul li {
+    float: left;
+}
+.topnav ul li button {
+    padding: 5px 15px;
+    border-radius: 15px;
+    /* margin-right: 150px; */
+    background-color: rgba(135, 112, 238,.1);
+    border: none;
+    box-shadow: 1px 1px 5px rgb(135, 112, 238);
+}
+.topnav ul li button:hover {
+    box-shadow: 1px 1px 5px rgb(211, 238, 112);
+    color: rgb(65, 6, 6);
+}
+
+.topnav ul li input {
+    outline: none;
+    height: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin: 8px 10px 0 360px; 
+    border: none;
+    background-color: rgb(255, 255, 255,0.3);
+}
+.topnav ul li input:focus {
+    color: rgb(161, 111, 243);
+    box-shadow: 1px 1px 5px rgb(135, 112, 238);
+}
+.topnav ul li a {
     display: block;
+    padding: 10px 20px; 
+    text-decoration: none;
     color: #f2f2f2;
     text-align: center;
-    padding: 10px 25px;
-    text-decoration: none;
 }
+
 
 /* 导航链接颜色修改 */
 .topnav a:hover {
