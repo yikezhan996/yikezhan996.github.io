@@ -20,9 +20,17 @@ window.onload = function () {
         var nowtime = year + "年" + month + "月" + date + "日" + week[day] + " " + h + ":" + m + ":" + s;
         document.querySelector('#now-time').innerHTML = nowtime;
     }, 1000);
+
+    // 获取文章高度
+    var height = $('.leftcolumn').css('height');
+    var articalHeight = $('.artical-type-nav').css('height');
+    var articalList = $('.rightcolumn').css('height');
+    // var newHeight = height.slice(-6,-2) - articalHeight.slice(-6,-2) + 'px';
+    var BlankHeight = height.slice(-6,-2) - articalList.slice(-6,-2) + 'px';
+    // $('.blank-box').css('height',newHeight);
+    $('.artical-list-blank').css('height',BlankHeight)
 }
 // 2.定义一个补零函数
 function checkTime(n) {
     return n >= 10 ? n : "0" + n;
 }
-
