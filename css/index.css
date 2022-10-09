@@ -74,10 +74,7 @@ html {
     /* height: 2000px; */
     background-color: rgb(162, 201, 241,0.1);
 }
-.artical-type-nav {
-    position: sticky;
-    top: 0;
-}
+
 .artical-type-nav .card h3{
     margin-left: 10px;
 }
