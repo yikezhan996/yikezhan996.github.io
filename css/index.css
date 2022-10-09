@@ -16,7 +16,8 @@ a {
 
 html {
     font-family: Arial;
-    background-image: linear-gradient(to right bottom,rgb(163, 206, 241),rgb(158, 158, 245));
+    /* background-color: aqua; */
+    background-image: linear-gradient(to bottom,rgb(158, 158, 245),rgb(163, 206, 241),rgb(180, 232, 191));
 }
 
 /* 文章卡片效果 */
