@@ -23,15 +23,86 @@
         <!-- 导航栏部分结束 -->
 
         <div class="movie-body-box">
-            <h3>初代影视追更</h3>
             <input type="text" placeholder="在这搜索影片" id="search-box">
             <a href="#" id="search-btn" target="_blank">搜索</a>
             <input type="text" placeholder="将影片链接填写到这" id="player-box">
             <a href="#" id="player-btn">播放</a>
+            <!--追更影视模块 -->
+            <div class="card time-box">
+                <h3>影视追更列表（仅供参考，不支持直接播放）</h3>
+                <h3 id="now-time">00:00:00</h3>
+            </div>
+            <div class="movie-list">
+                <ul>
+                    <!-- 周一列表 -->
+                    
+                    <!-- 周二列表 -->
+                    <li>
+                        <img src="../images/movie-images/星域四万年.webp" alt="">
+                        <h4>星域四万年</h4>
+                        <p>每周二10点</p>
+                        <a href="https://v.qq.com/x/search/?q=星域四万年">腾讯视频</a> 
+                    </li>
+                    <!-- 周三列表 -->
+                    <li>
+                        <img src="../images/movie-images/吞噬星空.webp" alt="">
+                        <h4>吞噬星空</h4>
+                        <p>每周三10点</p>
+                        <a href="https://v.qq.com/x/search/?q=吞噬星空">腾讯视频</a> 
+                    </li>
+                    <!-- 周四列表 -->
+                    <li>
+                        <img src="../images/movie-images/神墓.webp" alt="">
+                        <h4>神墓</h4>
+                        <p>每周四10点</p>
+                        <a href="https://so.youku.com/search_video/q_神墓">优酷</a> 
+                    </li>
+                    <!-- 周五列表 -->
+                    <li>
+                        <img src="../images/movie-images/完美世界.webp" alt="">
+                        <h4>完美世界</h4>
+                        <p>每周五10点</p>
+                        <a href="https://v.qq.com/x/search/?q=完美世界">腾讯视频</a> 
+                    </li>
+                    <!-- 周六列表 -->
+                    <li>
+                        <img src="../images/movie-images/斗罗大陆.webp" alt="">
+                        <h4>斗罗大陆 第一季</h4>
+                        <p>每周六10点</p>
+                        <a href="https://v.qq.com/x/search/?q=斗罗大陆第一季">腾讯视频</a> 
+                    </li>
+                    <li>
+                        <img src="../images/movie-images/战千年.webp" alt="">
+                        <h4>战千年</h4>
+                        <p>每周六12点</p>
+                        <a href=" https://search.bilibili.com/all?keyword=战千年">Bilibili</a> 
+                    </li>
+                    <!-- 周日列表 -->
+                    <li>
+                        <img src="../images/movie-images/凡人修仙传.webp" alt="">
+                        <h4>凡人修仙传 第一季</h4>
+                        <p>每周日11点</p>
+                        <a href=" https://search.bilibili.com/all?keyword=凡人修仙传">Bilibili</a> 
+                    </li>
+                    <li>
+                        <img src="../images/movie-images/雄兵连3雷霆万钧.webp" alt="">
+                        <h4>雄兵连3雷霆万钧</h4>
+                        <p>每周日10点</p>
+                        <a href="https://v.qq.com/x/search/?q=雄兵连3雷霆万钧">腾讯视频</a> 
+                    </li>
+                    <li>
+                        <img src="../images/movie-images/斗破苍穹.webp" alt="">
+                        <h4>斗破苍穹年番</h4>
+                        <p>每周日10点</p>
+                        <a href="https://v.qq.com/x/search/?q=斗破苍穹年番">腾讯视频</a> 
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <script src="../js/jquery.js"></script>
+    <script src="../js/util.js"></script>
     <script>
         var search = 'https://v.sogou.com/v?query=' ;
         var jx = 'https://jx.bozrc.com:4433/player/?url=' ;

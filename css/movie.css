@@ -30,3 +30,34 @@ html {
     color: rgb(251, 247, 247);
     padding: 0 10px;
 }
+
+
+/* 追更影视列表模块 */
+.movie-list {
+    width: 100%;
+    background-color: #fff;
+}
+.movie-list ul li {
+    float: left;
+    margin: 5px 5px 5px 0;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.movie-list ul li:hover {
+    box-shadow: 1px 1px 10px rgb(72, 222, 235);
+    transform: translate(0,-2px);
+}
+.movie-list ul li img{
+    width: 166px;
+    height: 180px;
+}
+.movie-list ul li p {
+    color: orange;
+}
+.movie-list ul li a {
+    color: blueviolet;
+    padding: 0;
+    margin-left: 80px;
+}
