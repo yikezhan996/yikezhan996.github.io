@@ -1,7 +1,14 @@
 html {
     background-color: rgb(71, 68, 68);
 }
-
+.left-box {
+    width: 85%;
+    float: left;
+}
+.right-box {
+    width: 15%;
+    float: right;
+}
 .movie-body-box {
     margin-top: 20px;
 }
@@ -50,7 +57,7 @@ html {
     transform: translate(0,-2px);
 }
 .movie-list ul li img{
-    width: 166px;
+    width: 165px;
     height: 180px;
 }
 .movie-list ul li p {
