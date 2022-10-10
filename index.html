@@ -21,7 +21,7 @@
                 <li><a href="#">忆客录</a></li>
                 <li><a href="#">行致远</a></li>
                 <li>
-                    <input type="text" placeholder="你想搜什么？"><button>搜索</button>
+                    <input type="text" placeholder="你想搜什么？" id="top-search"><a href="#" target="_blank" id="top-search-btn">搜索</a>
                 </li>
             </ul>
         </div>
@@ -112,10 +112,13 @@
                 <div class="card artical-list">
                     <ul>
                         <li>
-                            <a href="https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_aladin_banner">🏥关注疫情</a>
+                            <a href="https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_aladin_banner" target="_blank">🏥关注疫情</a>
                         </li>
                         <li>
-                            <a href="./pages/example.html">📚Html-Css小案例</a>
+                            <a href="./pages/example.html" target="_blank">📚Html-Css小案例</a>
+                        </li>
+                        <li>
+                            <a href="https://www.runoob.com/" target="_blank">🍀菜鸟教程</a>
                         </li>
                         <li>
                             <p>在浮躁的物欲横流下，有什么能比理想主义更能打动人心</p>
@@ -139,7 +142,15 @@
     <script src="./js/jquery.js"></script>
     <!-- 引入自定义工具模块 -->
     <script src="./js/util.js"></script>
-
+    <script>
+        $(function(){
+            let impl = 'https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=' ;
+            $('#top-search-btn').on('click',function(){
+                let url = impl + $('#top-search').val();
+                $('#top-search-btn').attr('href',url);
+            });
+        })
+    </script>
 </body>
 
 </html>
