@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    color: antiquewhite;
+}
+body {
+    background-color: rgb(88, 81, 81);
+}
+/* 案例一 */
+.box1 {
+    margin: 100px auto;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(12, 12, 12, 0.74);
+    border-radius: 20px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    line-height: 400px;
+}
+
+.box1::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    width: 600px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent,rgb(197, 105, 254));
+    animation: animate 6s linear infinite;
+}
+.box1::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    width: 600px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent,rgb(29, 230, 210));
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.box1 span {
+    position: absolute;
+    top: 2.5px;
+    width: 295px;
+    height: 395px;
+    border-radius: 20px;
+    background-color: #3c2525;
+    z-index: 1;
+}
+.box1 h2 {
+    /* position: absolute; */
+    color: aliceblue;
+    z-index: 2;
+}

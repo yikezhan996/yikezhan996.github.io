@@ -10,7 +10,47 @@
 </head>
 <body>
     <div class="container">
-        123
+        <!-- 导航栏部分 -->
+        <div class="topnav">
+            <a href="index.html" id="logo-box"><img src="../images/logo.png" alt=""></a>
+            <ul>
+                <li><a href="./movie.html">影视</a></li>
+                <li><a href="#">关于</a></li>
+                <li><a href="#">忆客录</a></li>
+                <li><a href="#">行致远</a></li>
+            </ul>
+        </div>
+        <!-- 导航栏部分结束 -->
+
+        <div class="movie-body-box">
+            <h3>初代影视追更</h3>
+            <input type="text" placeholder="在这搜索影片" id="search-box">
+            <a href="#" id="search-btn" target="_blank">搜索</a>
+            <select id="jx-list">
+                <option value="https://jx.playerjy.com/?url=" id="playerjy">playerjy</option>
+                <option value="https://jx.bozrc.com:4433/player/?url=" id="parwix">parwix</option>
+                <option value="https://jx.xmflv.com/?url=" id="xmflv">xmflv</option>
+            </select>
+            <input type="text" placeholder="将影片链接填写到这" id="player-box">
+            <a href="#" id="player-btn">播放</a>
+        </div>
     </div>
+
+    <script src="../js/jquery.js"></script>
+    <script>
+        var search = 'https://v.sogou.com/v?query=' ;
+        var jx = 'https://jx.bozrc.com:4433/player/?url=' ;
+        $(function(){
+            // 搜索影片
+            $('#search-btn').on('click',function(){
+                let url = search + $('#search-box').val();
+                $('#search-btn').attr('href',url);
+            });
+            $('#player-btn').on('click',function(){
+                let url = jx + $('#player-box').val();
+                $('#player-btn').attr('href',url);
+            });
+        });
+    </script>
 </body>
 </html>

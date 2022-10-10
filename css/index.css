@@ -40,10 +40,10 @@ html {
     top: 0;
 }
 .artical-type-nav .card h3{
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 .artical-type-nav .card ul li {
-    margin: 10px 0 0 10px;
+    margin-top: 10px;
 
 }
 
@@ -51,6 +51,9 @@ html {
 .artical h3 {
     padding-bottom: 5px;
     border-bottom: 1px solid rgb(17, 68, 236);
+}
+.artical p {
+    font-family: 'Hiragino Sans GB';
 }
 .artical img {
     width: 100%;
@@ -97,29 +100,13 @@ html {
     color: rgb(248, 9, 9);
 }
 
-/* 文章列表模块 */
-.artical-list ul li {
-    height: 30px;
-    line-height: 30px;
-    margin-top: 15px;
-    padding-left: 30px;
-    border-radius: 5px;
-    /* background-color: rgba(255,255,255,.3); */
-} 
-.artical-list ul li:hover {
-    background-color: rgba(255,255,255,.2);
-    /* box-shadow: 1px 1px 1px rgb(102, 158, 236); */
-}
-.artical-list ul li a {
-    color: rgb(81, 7, 7);
-}
-.artical-list ul li:hover a{
-    color: rgb(148, 15, 236);
-}
+/* 待定模块 */
 
-.artical-list h3 {
-    width: 100%;
-    margin-left: 30px;
+.artical-list ul li  {
+    margin-top: 10px;
+}
+.artical-list ul li p {
+    color: blueviolet;
 }
 .artical-list-blank {
     background-color: rgb(162, 201, 241,0.1);
