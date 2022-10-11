@@ -21,7 +21,8 @@
                 <li><a href="#">忆客录</a></li>
                 <li><a href="#">行致远</a></li>
                 <li>
-                    <input type="text" placeholder="你想搜什么？" id="top-search"><a href="#" target="_blank" id="top-search-btn">搜索</a>
+                    <input type="text" placeholder="你想搜什么？" id="top-search"><a href="#" target="_blank"
+                        id="top-search-btn">搜索</a>
                 </li>
             </ul>
         </div>
@@ -33,7 +34,7 @@
                 <div class="artical-type-nav">
                     <div class="card">
                         <h3>📰文章列表</h3>
-                        <ul>
+                        <ul id="artical-list-nav">
                             <li><a href="#">悲伤逆流成河</a></li>
                             <li><a href="#">悲伤逆流成河</a></li>
                             <li><a href="#">悲伤逆流成河</a></li>
@@ -47,7 +48,7 @@
             <!-- 首页文章模块，即最新发布模块 -->
             <div class="leftcolumn">
                 <div class="card artical" id="C1">
-                    <h3>期待三体</h3>
+                    <h3 id="artical-name">期待三体</h3>
                     <img src="./images/三体01.webp" alt="">
                     <p>文化大革命如火如荼地进行，天文学家叶文洁在其间历经劫难，被带到军方绝秘计划“红岸工程”。叶文洁以太阳为天线，向宇宙发出地球文明的第一声啼鸣，取得了探寻外星文明的突破性进展。三颗无规则运行的太阳主导下，四光年外的“三体文明”百余次毁灭与重生，正被逼迫不得不逃离母星，而恰在此时，他们接收到了地球发来的信息。对人性绝望的叶文洁向三体人暴露了地球的坐标，彻底改变了人类的命运。
                         地球的基础科学出现了异常的扰动，纳米科学家汪淼进入神秘的网络游戏《三体》，开始逐步逼近这个世界的真相。汪淼参加一次玩家聚会时，接触到了地球上应对三体人到来而形成的一个秘密组织（ETO）。地球防卫组织中国区作战中心通过“古筝计划”，一定程度上挫败了拯救派和降临派扰乱人类科学界和其他领域思想的图谋，获悉处于困境之中的三体人为了得到一个能够稳定生存的世界决定入侵地球。
@@ -57,7 +58,7 @@
                     </div>
                 </div>
                 <div class="card artical" id="C2">
-                    <h3>悲伤逆流成河</h3>
+                    <h3 id="artical-name">悲伤逆流成河</h3>
                     <img src="./images/1.jpg" alt="">
                     <p>多组校园欺凌事件，打破了5位主角本应该美好的青春校园生活。齐铭（赵英博饰）清俊帅气，是人人称颂的优等生，而易遥（任敏饰）却是大家口中的“赔钱货”。两人一同长大，感情很好。而这一切，在转学生唐小米（朱丹妮饰）出现之后发生了翻天覆地的变化。流言成了毁人利器，处处对易遥进行刁难，易遥的生活开始陷入黑暗，遭受各类残酷欺凌。顾森西（辛云来饰）教会易遥对校园暴力进行反击，他的出现给了易遥一丝曙光。可阴差阳错，顾森湘（章若楠饰）的意外却将她再度推入黑暗。当受害者变成施暴者，当看客变成助推，在这一场名为“玩笑”的闹剧中，没有旁观者，只有施暴者
                     </p>
@@ -73,7 +74,7 @@
                     <h3>低头思故乡</h3>
                 </div>
                 <div class="card artical" id="C5">
-                    <h3>我的智障舍友</h3>
+                    <h3 id="artical-name">我的智障舍友</h3>
                     <img src="./images/我的智障舍友01.webp" alt="">
                     <p>校园霸凌施暴者</p>
                     <div class="author">
@@ -107,12 +108,13 @@
                 </div>
                 <div class="card time-box">
                     <h3 id="now-time">00:00:00</h3>
-                    <span class="run-time">本站稳定运行：</span>
+                    <span id="showsectime">本站稳定运行：</span>
                 </div>
                 <div class="card artical-list">
                     <ul>
                         <li>
-                            <a href="https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_aladin_banner" target="_blank">🏥关注疫情</a>
+                            <a href="https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_aladin_banner"
+                                target="_blank">🏥关注疫情</a>
                         </li>
                         <li>
                             <a href="./pages/example.html" target="_blank">📚Html-Css小案例</a>
@@ -134,7 +136,7 @@
         <!-- 底部模块 -->
         <div class="footer">
             <h3>本页内容所属权属于忆客栈</h3>
-            <p>QQ：1316642992</p>
+            <p>QQ：1316642992 <a href="https://icp.gov.moe/?keyword=20225208" target="_blank">萌ICP备20225208号</a></p>
         </div>
         <!-- 底部模块结束 -->
     </div>
@@ -143,13 +145,32 @@
     <!-- 引入自定义工具模块 -->
     <script src="./js/util.js"></script>
     <script>
-        $(function(){
-            let impl = 'https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=' ;
-            $('#top-search-btn').on('click',function(){
+        $(function () {
+            let impl = 'https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=';
+            $('#top-search-btn').on('click', function () {
                 let url = impl + $('#top-search').val();
-                $('#top-search-btn').attr('href',url);
+                $('#top-search-btn').attr('href', url);
             });
+
         })
+        
+        function showsectime() {
+                var birthDay =new Date("2022-10-1");
+                // 这里修改站点开启日期
+                var today = new Date();
+                var timeold = today.getTime() - birthDay.getTime();
+                var sectimeold = timeold / 1000
+                var secondsold = Math.floor(sectimeold);
+                var msPerDay = 24 * 60 * 60 * 1000; var e_daysold = timeold / msPerDay;
+                var daysold = Math.floor(e_daysold);
+                var e_hrsold = (daysold - e_daysold) * -24;
+                var hrsold = Math.floor(e_hrsold);
+                var e_minsold = (hrsold - e_hrsold) * -60;
+                var minsold = Math.floor((hrsold - e_hrsold) * -60); var seconds = Math.floor((minsold - e_minsold) * -60).toString();
+                document.getElementById("showsectime").innerHTML = "稳定运行 :" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+                setTimeout(showsectime, 1000);
+            } 
+            showsectime();
     </script>
 </body>
 

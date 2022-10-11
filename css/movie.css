@@ -7,7 +7,7 @@ html {
 }
 .right-box {
     width: 15%;
-    float: right;
+    float: left;
 }
 .movie-body-box {
     margin-top: 20px;
