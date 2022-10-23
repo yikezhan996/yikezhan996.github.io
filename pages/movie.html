@@ -1,140 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>忆客栈 | 个人博客 | 影视娱乐</title>
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/movie.css">
-    <link rel="shortcut icon" href="../images/bitbug2.0.3.ico" />
-</head>
-<body>
-    <div class="container">
-        <!-- 导航栏部分 -->
-        <div class="topnav">
-            <a href="../index.html" id="logo-box"><img src="../images/logo.png" alt=""></a>
-            <ul>
-                <li><a href="./movie.html">影视</a></li>
-                <li><a href="#">关于</a></li>
-                <li><a href="#">忆客录</a></li>
-                <li><a href="#">行致远</a></li>
-            </ul>
-        </div>
-        <!-- 导航栏部分结束 -->
-        <div class="left-box">
-            <div class="movie-body-box">
-                <input type="text" placeholder="在这搜索影片" id="search-box">
-                <a href="#" id="search-btn" target="_blank">搜索</a>
-                <input type="text" placeholder="将影片链接填写到这" id="player-box">
-                <a href="#" id="player-btn">播放</a>
-                <!--追更影视模块 -->
-                <div class="card time-box">
-                    <h3>影视追更列表（仅供参考，不支持直接播放）</h3>
-                    <h3 id="now-time">00:00:00</h3>
-                </div>
-                <div class="movie-list">
-                    <ul>
-                        <!-- 周一列表 -->
-                        
-                        <!-- 周二列表 -->
-                        <li>
-                            <img src="../images/movie-images/星域四万年.webp" alt="">
-                            <h4>星域四万年</h4>
-                            <p>每周二10点</p>
-                            <a href="https://v.qq.com/x/search/?q=星域四万年">腾讯视频</a> 
-                        </li>
-                        <!-- 周三列表 -->
-                        <li>
-                            <img src="../images/movie-images/吞噬星空.webp" alt="">
-                            <h4>吞噬星空</h4>
-                            <p>每周三10点</p>
-                            <a href="https://v.qq.com/x/search/?q=吞噬星空">腾讯视频</a> 
-                        </li>
-                        <!-- 周四列表 -->
-                        <li>
-                            <img src="../images/movie-images/神墓.webp" alt="">
-                            <h4>神墓</h4>
-                            <p>每周四10点</p>
-                            <a href="https://so.youku.com/search_video/q_神墓">优酷</a> 
-                        </li>
-                        <li>
-                            <img src="../images/movie-images/诸天纪.webp" alt="">
-                            <h4>诸天纪</h4>
-                            <p>已完结</p>
-                            <a href="https://so.youku.com/search_video/q_诸天纪">优酷</a> 
-                        </li>
-                        <li>
-                            <img src="../images/movie-images/长夜开拓者.webp" alt="">
-                            <h4>长夜开拓者</h4>
-                            <p>每周四11点</p>
-                            <a href=" https://search.bilibili.com/all?keyword=长夜开拓者">Bilibili</a> 
-                        </li>
-                        <!-- 周五列表 -->
-                        <li>
-                            <img src="../images/movie-images/完美世界.webp" alt="">
-                            <h4>完美世界</h4>
-                            <p>每周五10点</p>
-                            <a href="https://v.qq.com/x/search/?q=完美世界">腾讯视频</a> 
-                        </li>
-                        <!-- 周六列表 -->
-                        <li>
-                            <img src="../images/movie-images/斗罗大陆.webp" alt="">
-                            <h4>斗罗大陆 第一季</h4>
-                            <p>每周六10点</p>
-                            <a href="https://v.qq.com/x/search/?q=斗罗大陆第一季">腾讯视频</a> 
-                        </li>
-                        <li>
-                            <img src="../images/movie-images/战千年.webp" alt="">
-                            <h4>战千年</h4>
-                            <p>每周六12点</p>
-                            <a href=" https://search.bilibili.com/all?keyword=战千年">Bilibili</a> 
-                        </li>
-                        <!-- 周日列表 -->
-                        <li>
-                            <img src="../images/movie-images/凡人修仙传.webp" alt="">
-                            <h4>凡人修仙传 第一季</h4>
-                            <p>每周日11点</p>
-                            <a href=" https://search.bilibili.com/all?keyword=凡人修仙传">Bilibili</a> 
-                        </li>
-                        <li>
-                            <img src="../images/movie-images/雄兵连3雷霆万钧.webp" alt="">
-                            <h4>雄兵连3雷霆万钧</h4>
-                            <p>每周日10点</p>
-                            <a href="https://v.qq.com/x/search/?q=雄兵连3雷霆万钧">腾讯视频</a> 
-                        </li>
-                        <li>
-                            <img src="../images/movie-images/斗破苍穹.webp" alt="">
-                            <h4>斗破苍穹年番</h4>
-                            <p>每周日10点</p>
-                            <a href="https://v.qq.com/x/search/?q=斗破苍穹年番">腾讯视频</a> 
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="right-box">
-            <div class="card">其实就是玩儿</div>
-        </div>
-        
-    </div>
 
-    <script src="../js/jquery.js"></script>
-    <script src="../js/util.js"></script>
-    <script>
-        var search = 'https://v.sogou.com/v?query=' ;
-        var jx = 'https://jx.bozrc.com:4433/player/?url=' ;
-        $(function(){
-            // 搜索影片
-            $('#search-btn').on('click',function(){
-                let url = search + $('#search-box').val();
-                $('#search-btn').attr('href',url);
-            });
-            $('#player-btn').on('click',function(){
-                let url = jx + $('#player-box').val();
-                $('#player-btn').attr('href',url);
-            });
-        });
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script language="JavaScript">
+        function onload() {
+            var obj = document.getElementById('jk');
+        }
+
+        function fnChange() { }
+
+        function onClear() {
+            document.getElementById("vipurl").value = "";
+        }
+
+        function onPlay() {
+            var oJK = document.getElementById("jk");
+            var sJK = oJK.options[oJK.selectedIndex].value;
+            var sVipUrl = document.getElementById("vipurl").value;
+            var oWin = document.getElementById("play");
+            if (sVipUrl.length > 0) {
+                oWin.src = sJK + sVipUrl;
+            }
+        }
+
+        function iFrameHeight() {
+            var ifm = document.getElementById("play");
+            var subWeb = document.frames ? document.frames["play"].document : ifm.contentDocument;
+            ifm.height = subWeb.body.scrollHeight;
+            ifm.width = subWeb.body.scrollWidth;
+        }
+
     </script>
+    <title>休息一刻哦</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/movie.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        table,
+        tr,
+        td,
+        iframe {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background: url(../images/1659087098571.jpg) no-repeat;
+            background-size: 100%;
+        }
+
+        .boxcss {
+            margin-top: 17px;
+        }
+    </style>
+</head>
+
+<body onload="onload()" style="background-color: black;">
+    <table width="100%" align="center" height="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td height="9">
+                    <form method="post" action="https://vip.yeyulingfeng.com/jiekou.html?ver=20220904">
+                        <div class="container boxcss">
+                            <div class="row">
+                                <ul class="search-list">
+                                    <li><p>可以这些地方寻找你想看的视频：</p></li>
+                                    <li><a target="_blank" href="https://v.qq.com/channel/choice?channel_2022=1">腾讯视频</a></li>
+                                    <li><a target="_blank" href="https://www.iqiyi.com/">爱奇艺视频</a></li>
+                                    <li><a target="_blank" href="https://www.youku.com/">优酷视频</a></li>
+                                    <li><a target="_blank" href="https://www.mgtv.com/">芒果视频</a></li>
+                                    <li><a target="_blank" href="https://www.bilibili.com/">bilibili</a></li>
+                                    <li><a target="_blank" href="https://v.sogou.com/">搜狗视频</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="row" style="margin-top:20px ;">
+                                <!-- 选择接口 -->
+                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                    <select name="jk" id="jk" size="1" onchange="fnChange()" class="form-control">
+                                        <option value="https://vip.laobandq.com/jiexi.php?url=" selected="">【线路01】
+                                        </option>
+                                        <option value="https://www.pangujiexi.cc/jiexi.php?url=" selected="">【线路02】
+                                        </option>
+                                        <option value="https://ckmov.ccyjjd.com/ckmov/?url=" selected="">【线路03】</option>
+                                        <option value="https://www.h8jx.com/jiexi.php?url=" selected="">【接口04】</option>
+                                        <option value="https://www.1717yun.com/jx/ty.php?url=" selected="">【线路05】
+                                        </option>
+                                        <option value="https://yparse.jn1.cc/index.php?url=" selected="">【线路06】</option>
+                                        <option value="https://jx.4kdv.com/?url=" selected="">【线路07】</option>
+                                        <option value="https://www.administratorw.com/video.php?url=" selected="">【线路08】
+                                        </option>
+                                        <option value="https://jx.xiaolangyun.com/?url=" selected="">【线路09】</option>
+                                        <option value="https://jx.quanmingjiexi.com/?url=" selected="">【线路10】</option>
+                                        <option value="https://jx.m3u8.tv/jiexi/?url=" selected="">【线路11】</option>
+                                        <option value="https://www.8090.la/8090/?url=" selected="">【线路12】</option>
+                                    <option value="https://svip.bljiex.cc/?v=" selected="">【线路13】</option>
+                                    <option value="https://jx.xmflv.com/?url=" selected="">【虾米解析】</option>
+                                    <option value="https://api.653520.top/vip/?url=" selected="">【线路15】</option>
+                                    <option value="https://www.ckmov.vip/api.php?url=" selected="">【线路16】</option>
+                                    <option value="https://www.gai4.com/?url=" selected="">【线路17】</option> -->
+                                        <option value="https://api.jiexi.la/?url=" selected="">【稳定通用】</option>
+                                        <option value="https://okjx.cc/?url=" selected="">【高速稳定】</option>
+                                    </select>
+                                </div>
+                                <!-- 选择接口结束 -->
+                                <!-- 视频地址 -->
+                                <!-- https://v.youku.com/v_show/id_XNDkwOTIxOTIyNA==.html -->
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="vipurl" id="vipurl" size="88"
+                                        placeholder="在这里输入影视链接..." class="form-control">
+                                </div>
+                                <!-- 视频地址结束 -->
+                                <div class="col-md-2 col-sm-2 col-xs-6">
+                                    <input type="button" value="播放" onclick="onPlay()" class="btn btn-success"
+                                        style="width: 100%;">
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-6">
+                                    <input type="button" value="清除" onclick="onClear()" class="btn btn-danger"
+                                        style="width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <iframe class="bg" src="../pages/saved_resource.html" name="play" id="play" width="100%" align="center"
+                        height="100%" frameborder="0" marginheight="0" allowfullscreen="true" marginwidth="0"
+                        scrolling="no" style="background:url(&#39;img/playbg.jpg&#39;) no-repeat center;">
+                    </iframe>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
 </body>
+
 </html>

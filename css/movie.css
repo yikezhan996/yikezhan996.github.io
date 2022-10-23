@@ -1,70 +1,21 @@
-html {
-    background-color: rgb(71, 68, 68);
+.search-list {
+    text-align: center;
+    margin-left: 15px;
 }
-.left-box {
-    width: 85%;
+.search-list li{
+    list-style: none;
     float: left;
+    display: block;
+    height: 40px;
+    padding: 0 20px;
+    line-height: 40px;
 }
-.right-box {
-    width: 15%;
-    float: left;
+.search-list li:hover {
+    background-color: rgba(0,0,0,.1);
 }
-.movie-body-box {
-    margin-top: 20px;
+.search-list li:hover a {
+    color:#fff;
 }
-.movie-body-box h3 {
-    color: rgb(247, 242, 242);
-    margin-bottom: 20px;
-}
-.movie-body-box input {
-    padding-left: 15px;
-    outline: none;
-    height: 30px;
-    border-radius: 15px;
-    background-color: rgba(248, 245, 245,.5);
-}
-#jx-list {
-    width: 100px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255,0.5);
-}
-#jx-list option {
-    background-color: rgba(151, 208, 232,0.8);
-}
-
-.movie-body-box a {
-    color: rgb(251, 247, 247);
-    padding: 0 10px;
-}
-
-
-/* 追更影视列表模块 */
-.movie-list {
-    width: 100%;
-    background-color: #fff;
-}
-.movie-list ul li {
-    float: left;
-    margin: 5px 5px 5px 0;
-    /* border-radius: 10px; */
-    overflow: hidden;
-    background-color: #fff;
-}
-
-.movie-list ul li:hover {
-    box-shadow: 1px 1px 10px rgb(72, 222, 235);
-    transform: translate(0,-2px);
-}
-.movie-list ul li img{
-    width: 165px;
-    height: 180px;
-}
-.movie-list ul li p {
-    color: orange;
-}
-.movie-list ul li a {
-    color: blueviolet;
-    padding: 0;
-    margin-left: 80px;
+.search-list li a {
+    text-decoration: none;
 }
