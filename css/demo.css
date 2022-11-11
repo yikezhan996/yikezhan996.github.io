@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(247, 244, 244);
+}
+.container {
+    display: flex;
+    height: 100%;
+}
+
+/* 左侧盒子 */
+.left-box {
+    width: 200px;
+    height: 100%;
+    background-color: rgba(19, 7, 7,.4);
+}
+.right-box {
+    width: 100%;
+    height: 100%;
+}
+.right-box .item {
+    height: 100%;
+    width: 100%;
+}
